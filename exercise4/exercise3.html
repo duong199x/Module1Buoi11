@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = prompt("nhap n")
+    for (let i = 0; i <= n; i++) {
+        for (let j = 0; j < i; j++) {
+            document.write("*")
+        }
+        document.write('<br>')
+    }
+    document.write('<hr>')
+    for (let i = n; i >= 1; i--) {
+        for (let j = 0; j < i; j++) {
+            document.write('*')
+        }
+        document.write('<br>');
+
+    }
+    document.write('<hr>')
+    for (let i = 0; i <= n; i++) {
+        let str = ''
+        for (let j = n; j > i; j--) {
+            str += '&ensp;'
+        }
+        for (let j = i; j > 0; j--) {
+            str += '*'
+        }
+        document.write('<br>')
+        document.write(str)
+
+    }
+    for (let i = n; i >= 1; i--) {
+        let str = ''
+        for (let j = n; j > i; j--) {
+            str += '&ensp;'
+        }
+        for (let j = i; j > 0; j--) {
+            str += '*'
+        }
+        document.write('<br>')
+        document.write(str)
+
+    }
+</script>
+</html>
